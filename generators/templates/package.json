@@ -1,0 +1,29 @@
+{
+  "name": "@rhelements/<%= themeName %>",
+  "rhelement": {
+    "className": "<%= themeClassName %>",
+    "elementName": "<%= themeName %>"
+  },
+  "version": "<%= themeVersion %>",
+  "description": "<%= readmeName %> theme for RHElements",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "../../node_modules/.bin/gulp && ../../node_modules/.bin/rollup -c && ../../node_modules/.bin/prettier --ignore-path ../../.prettierignore --write '**/*.{js,json}'",
+    "dev": "../../node_modules/.bin/gulp dev"
+  },
+  "author": {
+    "name": "<%= author %>"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@rhelements/rhelement": "<%= rhelementVersion %>"
+  },
+  "generator-rhelements-theme-version": "<%= generatorRhelementsThemeVersion %>"
+}

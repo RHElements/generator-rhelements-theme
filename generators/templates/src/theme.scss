@@ -1,0 +1,49 @@
+@import "sass/includes";
+
+/// ===========================================================================
+///
+/// Base theme SASS
+///
+/// ===========================================================================
+
+:root {
+  /// Loop through each color in colors-map and print CSS vars
+  @each $cssvar, $varstack in $theme-colors {
+
+    --rh-theme--color--#{$cssvar}: #{$varstack};
+  }
+  /// Loop through each var in vars-map and print CSS vars
+  @each $cssvar, $varstack in $theme-vars {
+
+    --rh-theme--#{$cssvar}: #{$varstack};
+  }
+}
+
+@include rh-box-sizing();
+
+body {
+  font-family: var(--rh-theme--font-family);
+  font-size: var(--rh-theme--font-size);
+  line-height: var(--rh-theme--line-height);
+  color: var(--rh-broadcasted--color--text, #{map-get($theme-colors, 'text')});
+}
+
+a {
+  color: var(--rh-broadcasted--color--ui-link, #{map-get($theme-colors, 'ui-link')});
+}
+
+a:visited {
+  color: var(--rh-broadcasted--color--ui-link--visited, var(--rh-broadcasted--color--ui-link, #{map-get($theme-colors, 'ui-link--visited')}));
+}
+
+a:hover {
+  color: var(--rh-broadcasted--color--ui-link--hover, var(--rh-broadcasted--color--ui-link, #{map-get($theme-colors, 'ui-link--hover')}));
+}
+
+a:focus {
+  color: var(--rh-broadcasted--color--ui-link--focus, var(--rh-broadcasted--color--ui-link, #{map-get($theme-colors, 'ui-link--focus')}));
+}
+
+p {
+  margin: 1em 0;
+}
