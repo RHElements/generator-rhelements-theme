@@ -5,11 +5,9 @@ const gulp = require("gulp");
 const rename = require("gulp-rename");
 const replace = require("gulp-replace");
 const stripCssComments = require("strip-css-comments");
-// const trim = require("trim");
 const trim = require("gulp-trim");
 const decomment = require("decomment");
 <%_ if (useSass) { _%>
-// const sass = require('node-sass');
 const sass = require("gulp-sass");
 <%_ } _%>
 const del = require("del");
@@ -20,16 +18,22 @@ let watcher;
 gulp.task("clean", () => {
   return del(["./*.umd.*"]);
 });
-
+<%_ if (useSass) { _%>
 gulp.task("sass", () => {
   return gulp
     .src(["./src/*.scss"])
     .pipe(sass())
-    .pipe(stripCssComments())
+    // .pipe(stripCssComments())
     .pipe(trim())
     .pipe(gulp.dest("./"));
 });
-
+<%_ } else {_%>
+  gulp.task("copy", () => {
+    return gulp
+      .src(["./src/*.css"])
+      .pipe(gulp.dest("./"));
+  });
+<%_ } _%>
 gulp.task("replaceStyles", () => {
   return gulp
     .src("./src/<%= themeName %>.js")
@@ -75,7 +79,7 @@ gulp.task("bundle", shell.task("../../node_modules/.bin/rollup -c"));
 
 gulp.task(
   "build",
-  gulp.series("clean", "sass", "replaceStyles", "compile", "bundle")
+  gulp.series("clean", <%_ if (useSass) { _%>"sass", <%_ } else { _%>"copy", <% } %>"replaceStyles", "compile", "bundle")
 );
 
 gulp.task("default", gulp.series("build"));

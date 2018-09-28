@@ -1,0 +1,158 @@
+/// ===========================================================================
+///
+/// Colors
+/// Edit these colors to suit your theme!
+///
+/// ===========================================================================
+
+/// ========================================================================
+/// Base Text & UI Link Colors
+/// ========================================================================
+
+// Base text and link colors
+$rhelements--color--text:                               #333 !default;
+$rhelements--color--ui-link:                            #06c !default;
+$rhelements--color--ui-link--visited:                   #7551a6 !default;
+
+// Text and link colors on dark backgrounds
+$rhelements--color--text--on-dark:                      #fff !default;
+$rhelements--color--ui-link--on-dark:                   #73bcf7 !default;
+$rhelements--color--ui-link--on-dark--visited:          #967abd !default;
+
+// Text and link colors on saturated backgrounds
+$rhelements--color--text--on-saturated:                 #fff !default;
+$rhelements--color--ui-link--on-saturated:              #73bcf7 !default;
+$rhelements--color--ui-link--on-saturated--visited:     #967abd !default;
+
+
+// Don't need to change these unless you really want to.
+// These colors reference the above link colors.
+$rhelements--color--ui-link--hover:                     darken($rhelements--color--ui-link, 10%) !default;
+$rhelements--color--ui-link--focus:                     darken($rhelements--color--ui-link, 10%) !default;
+$rhelements--color--ui-link--on-dark--hover:            darken($rhelements--color--ui-link--on-dark, 10%) !default;
+$rhelements--color--ui-link--on-dark--focus:            darken($rhelements--color--ui-link--on-dark--visited, 10%) !default;
+$rhelements--color--ui-link--on-saturated--hover:       darken($rhelements--color--ui-link--on-saturated, 10%) !default;
+$rhelements--color--ui-link--on-saturated--focus:       darken($rhelements--color--ui-link--on-saturated--visited, 10%) !default;
+
+
+
+/// ========================================================================
+/// Base UI Colors for Buttons: CTAs: and actionable UI elements
+/// ========================================================================
+
+$rhelements--color--ui-base:                            #0477a4 !default;
+$rhelements--color--ui-base--hover:                     darken(#0477a4, 20%) !default;
+$rhelements--color--ui-base--text:                      #fff !default;
+$rhelements--color--ui-base--text--hover:               #fff !default;
+
+$rhelements--color--ui-complement:                      darken(#797979, 20%) !default;
+$rhelements--color--ui-complement--hover:               darken(#797979, 40%) !default;
+$rhelements--color--ui-complement--text:                #fff !default;
+$rhelements--color--ui-complement--text--hover:         #fff !default;
+
+$rhelements--color--ui-accent:                          #fe460d !default;
+$rhelements--color--ui-accent--hover:                   darken(#fe460d, 20%) !default;
+$rhelements--color--ui-accent--text:                    #fff !default;
+$rhelements--color--ui-accent--text--hover:             #fff !default;
+
+$rhelements--color--ui-disabled:                        #d2d2d2 !default;
+$rhelements--color--ui-disabled--hover:                 #d2d2d2 !default;
+$rhelements--color--ui-disabled--text:                  #797979 !default;
+$rhelements--color--ui-disabled--text--hover:           #797979 !default;
+
+
+/// ========================================================================
+// Base Surface Colors for Container elements
+/// ========================================================================
+
+// Lightest group
+$rhelements--color--surface--lightest:                  #fff !default;
+$rhelements--color--surface--lightest--text:            $rhelements--color--text !default;
+$rhelements--color--surface--lightest--link:            $rhelements--color--ui-link !default;
+$rhelements--color--surface--lightest--link--visited:   $rhelements--color--ui-link--visited !default;
+$rhelements--color--surface--lightest--link--hover:     $rhelements--color--ui-link--hover !default;
+$rhelements--color--surface--lightest--link--focus:     $rhelements--color--ui-link--focus !default;
+
+// Lighter group
+$rhelements--color--surface--lighter:                   lighten(#797979, 45%) !default;
+$rhelements--color--surface--lighter--text:             $rhelements--color--text !default;
+$rhelements--color--surface--lighter--link:             $rhelements--color--ui-link !default;
+$rhelements--color--surface--lighter--link--visited:    $rhelements--color--ui-link--visited !default;
+$rhelements--color--surface--lighter--link--hover:      $rhelements--color--ui-link--hover !default;
+$rhelements--color--surface--lighter--link--focus:      $rhelements--color--ui-link--focus !default;
+
+// Base group
+$rhelements--color--surface--base:                      lighten(#797979, 40%) !default;
+$rhelements--color--surface--base--text:                $rhelements--color--text !default;
+$rhelements--color--surface--base--link:                #00538c !default;
+$rhelements--color--surface--base--link--visited:       #7551a6 !default;
+$rhelements--color--surface--base--link--hover:         darken(#00538c, 10%) !default;
+$rhelements--color--surface--base--link--focus:         darken(#00538c, 10%) !default;
+
+// Darker group
+$rhelements--color--surface--darker:                    darken(#797979, 20%) !default;
+$rhelements--color--surface--darker--text:              $rhelements--color--text--on-dark !default;
+$rhelements--color--surface--darker--link:              $rhelements--color--ui-link--on-dark !default;
+$rhelements--color--surface--darker--link--visited:     $rhelements--color--ui-link--on-dark--visited !default;
+$rhelements--color--surface--darker--link--hover:       $rhelements--color--ui-link--on-dark--hover !default;
+$rhelements--color--surface--darker--link--focus:       $rhelements--color--ui-link--on-dark--focus !default;
+
+// Darkest group
+$rhelements--color--surface--darkest:                   darken(#797979, 40%) !default;
+$rhelements--color--surface--darkest--text:             $rhelements--color--text--on-dark !default;
+$rhelements--color--surface--darkest--link:             $rhelements--color--ui-link--on-dark !default;
+$rhelements--color--surface--darkest--link--visited:    $rhelements--color--ui-link--on-dark--visited !default;
+$rhelements--color--surface--darkest--link--hover:      $rhelements--color--ui-link--on-dark--hover !default;
+$rhelements--color--surface--darkest--link--focus:      $rhelements--color--ui-link--on-dark--focus !default;
+
+// Complement group
+$rhelements--color--surface--complement:                #0477a4 !default;
+$rhelements--color--surface--complement--text:          $rhelements--color--text--on-saturated !default;
+$rhelements--color--surface--complement--link:          $rhelements--color--ui-link--on-saturated !default;
+$rhelements--color--surface--complement--link--visited: $rhelements--color--ui-link--on-saturated--visited !default;
+$rhelements--color--surface--complement--link--hover:   $rhelements--color--ui-link--on-saturated--hover !default;
+$rhelements--color--surface--complement--link--focus:   $rhelements--color--ui-link--on-saturated--focus !default;
+
+
+// Accent group
+$rhelements--color--surface--accent:                    #fe460d !default;
+$rhelements--color--surface--accent--text:              $rhelements--color--text--on-saturated !default;
+$rhelements--color--surface--accent--link:              $rhelements--color--ui-link--on-saturated !default;
+$rhelements--color--surface--accent--link--visited:     $rhelements--color--ui-link--on-saturated--visited !default;
+$rhelements--color--surface--accent--link--hover:       $rhelements--color--ui-link--on-saturated--hover !default;
+$rhelements--color--surface--accent--link--focus:       $rhelements--color--ui-link--on-saturated--focus !default;
+
+
+/* Palette of Border Colors */
+$rhelements--color--surface--border:                    lighten(#797979, 40%) !default;
+$rhelements--color--surface--border--lightest:          lighten(#797979, 45%) !default;
+$rhelements--color--surface--border--darkest:           darken(#797979, 20%) !default;
+
+
+/// ========================================================================
+// Base Feedback Colors for messaging: errors: etc.
+/// ========================================================================
+
+$rhelements--color--feedback--critical:                 #f44336 !default; // main color
+$rhelements--color--feedback--critical--lightest:       #ffebee !default; // background color
+$rhelements--color--feedback--critical--darkest:        #b71c1c !default; // text/border color
+
+$rhelements--color--feedback--important:                #ff5722 !default; // main color
+$rhelements--color--feedback--important--lightest:      #fbe9e7 !default; // background color
+$rhelements--color--feedback--important--darkest:       #bf360c !default; // text/border color
+
+$rhelements--color--feedback--moderate:                 #ff8f00 !default; // main color
+$rhelements--color--feedback--moderate--lightest:       #fff8e1 !default; // background color
+$rhelements--color--feedback--moderate--darkest:        #bd5200 !default; // text/border color
+
+$rhelements--color--feedback--success:                  #2e7d32 !default; // main color
+$rhelements--color--feedback--success--lightest:        #e8f5e9 !default; // background color
+$rhelements--color--feedback--success--darkest:         #1b5e20 !default; // text/border color
+
+$rhelements--color--feedback--info:                     #0277bd !default; // main color
+$rhelements--color--feedback--info--lightest:           #e1f5fe !default; // background color
+$rhelements--color--feedback--info--darkest:            #01579b !default; // text/border color
+
+$rhelements--color--feedback--default:                  #606060 !default; // main color
+$rhelements--color--feedback--default--lightest:        #dfdfdf !default; // background color
+$rhelements--color--feedback--default--darkest:         #464646 !default; // text/border color

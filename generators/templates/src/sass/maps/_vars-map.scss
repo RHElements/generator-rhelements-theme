@@ -1,0 +1,44 @@
+/// ===========================================================================
+///
+/// Vars Map
+/// These colors reference _vars.scss
+/// No need to change values in this file
+///
+/// ===========================================================================
+
+$theme-vars: (
+  container-spacer:              $rhelements--container-spacer,
+  container-padding:             $rhelements--container-padding,
+  content-spacer:                $rhelements--content-spacer,
+
+  font-size:                     $rhelements--font-size,
+  line-height:                   $rhelements--line-height,
+
+  font-family:                   $rhelements--font-family,
+  font-family--heading:          $rhelements--font-family--heading,
+  font-family--code:             $rhelements--font-family--code,
+
+  font-size--heading--alpha:     $rhelements--font-size--heading--alpha,
+  font-size--heading--beta:      $rhelements--font-size--heading--beta,
+  font-size--heading--gamma:     $rhelements--font-size--heading--gamma,
+  font-size--heading--delta:     $rhelements--font-size--heading--delta,
+  font-size--heading--epsilon:   $rhelements--font-size--heading--epsilon,
+  font-size--heading--zeta:      $rhelements--font-size--heading--zeta,
+
+  link--text-decoration:         $rhelements--link--text-decoration,
+  link--text-decoration--hover:  $rhelements--link--text-decoration--hover,
+
+  surface--border-width:         $rhelements--surface--border-width,
+  surface--border-style:         $rhelements--surface--border-style,
+  surface--border-radius:        $rhelements--surface--border-radius,
+  ui--border-width:              $rhelements--ui--border-width,
+  ui--border-style:              $rhelements--ui--border-style,
+  ui--border-radius:             $rhelements--ui--border-radius,
+
+  box-shadow--sm:                $rhelements--box-shadow--sm,
+  box-shadow--md:                $rhelements--box-shadow--md,
+  box-shadow--lg:                $rhelements--box-shadow--lg,
+  box-shadow--inset:             $rhelements--box-shadow--inset,
+
+  animation-timing:              $rhelements--animation-timing,
+);

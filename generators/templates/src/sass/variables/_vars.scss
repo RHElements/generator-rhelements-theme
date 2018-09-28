@@ -1,0 +1,41 @@
+/// ===========================================================================
+///
+/// Vars
+/// Edit these variables to suit your theme!
+///
+/// ===========================================================================
+
+$rhelements--container-spacer:              rh-size-prem(16px);
+$rhelements--container-padding:             rh-size-prem(16px);
+$rhelements--content-spacer:                rh-size-prem(16px);
+
+$rhelements--font-size:                     16px;
+$rhelements--line-height:                   1.5;
+
+$rhelements--font-family:                   Helvetica, helvetica, arial, sans-serif;
+$rhelements--font-family--heading:          Helvetica, helvetica, arial, sans-serif;
+$rhelements--font-family--code:             Consolas, Monaco, "Andale Mono", monospace;
+
+$rhelements--font-size--heading--alpha:     rh-size-prem(32px) !default;
+$rhelements--font-size--heading--beta:      rh-size-prem(28px) !default;
+$rhelements--font-size--heading--gamma:     rh-size-prem(24px) !default;
+$rhelements--font-size--heading--delta:     rh-size-prem(20px) !default;
+$rhelements--font-size--heading--epsilon:   rh-size-prem(18px) !default;
+$rhelements--font-size--heading--zeta:      rh-size-prem(16px) !default;
+
+$rhelements--link--text-decoration:         underline;
+$rhelements--link--text-decoration--hover:  underline;
+
+$rhelements--surface--border-width:         1px;
+$rhelements--surface--border-style:         solid;
+$rhelements--surface--border-radius:        0;
+$rhelements--ui--border-width:              1px;
+$rhelements--ui--border-style:              solid;
+$rhelements--ui--border-radius:             2px;
+
+$rhelements--box-shadow--sm:                0  #{rh-size-prem(1)}  #{rh-size-prem(2)} 0 rgba(#131313, .2);
+$rhelements--box-shadow--md:                0  #{rh-size-prem(2)}  #{rh-size-prem(1)} #{rh-size-prem(1)} rgba(#131313, .12), 0  #{rh-size-prem(4)}  #{rh-size-prem(11)} #{rh-size-prem(6)} rgba(#131313, .05);
+$rhelements--box-shadow--lg:                0  #{rh-size-prem(3)}  #{rh-size-prem(7)} #{rh-size-prem(3)} rgba(#131313, .13), 0  #{rh-size-prem(11)}  #{rh-size-prem(24)} #{rh-size-prem(16)} rgba(#131313, .12);
+$rhelements--box-shadow--inset:             inset 0 0 #{rh-size-prem(10)} 0 rgba(#131313, .25);
+
+$rhelements--animation-timing:              cubic-bezier(0.465, 0.183, 0.153, 0.946);

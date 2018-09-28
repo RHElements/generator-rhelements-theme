@@ -1,0 +1,16 @@
+@import "./colors-map";
+@import "./vars-map";
+
+// Generates CSS Vars :root
+:root {  
+  /// Loop through each color in colors-map and print CSS vars
+  @each $cssvar, $varstack in $theme-colors {
+
+    --rh-theme--color--#{$cssvar}: #{$varstack};
+  }
+  /// Loop through each var in vars-map and print CSS vars
+  @each $cssvar, $varstack in $theme-vars {
+
+    --rh-theme--#{$cssvar}: #{$varstack};
+  }
+}

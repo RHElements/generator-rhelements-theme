@@ -4,20 +4,10 @@
 ///
 /// Base theme SASS
 ///
+/// Directions:
+/// To edit colors and variables, go to: src/sass/variables/
+///
 /// ===========================================================================
-
-:root {
-  /// Loop through each color in colors-map and print CSS vars
-  @each $cssvar, $varstack in $theme-colors {
-
-    --rh-theme--color--#{$cssvar}: #{$varstack};
-  }
-  /// Loop through each var in vars-map and print CSS vars
-  @each $cssvar, $varstack in $theme-vars {
-
-    --rh-theme--#{$cssvar}: #{$varstack};
-  }
-}
 
 @include rh-box-sizing();
 

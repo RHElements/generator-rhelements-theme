@@ -1,4 +1,4 @@
-///
+/// ===========================================================================
 ///
 /// SASS Includes
 ///
@@ -11,6 +11,16 @@ $rh-global--font-size-root:  16 !default;
 @import "functions/functions";
 @import "mixins/mixins";
 
-// Colors and variables maps
-@import "variables/colors-map";
-@import "variables/vars-map";
+
+/// ===========================================================================
+/// BEGIN: EDIT THESE
+/// ===========================================================================
+@import "variables/colors";
+@import "variables/vars";
+/// ===========================================================================
+/// END: EDIT THESE
+/// ===========================================================================
+
+
+// Maps for output, prints CSS Vars :root { }
+@import "maps/maps";

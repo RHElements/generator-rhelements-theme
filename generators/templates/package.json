@@ -4,7 +4,7 @@
     "className": "<%= themeClassName %>",
     "elementName": "<%= themeName %>"
   },
-  "version": "<%= themeVersion %>",
+  "version": "<%= rhelementVersion %>",
   "description": "<%= readmeName %> theme for RHElements",
   "repository": {
     "type": "git",

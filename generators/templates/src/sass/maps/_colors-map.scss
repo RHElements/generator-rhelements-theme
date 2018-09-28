@@ -1,0 +1,161 @@
+/// ===========================================================================
+///
+/// Colors Map
+/// These colors reference _colors.scss
+/// No need to change values in this file
+///
+/// ===========================================================================
+
+
+$theme-colors: (
+
+  // ========================================================================
+  // Base Text Colors
+  // ========================================================================
+
+  text:                               $rhelements--color--text,
+  text--on-dark:                      $rhelements--color--text--on-dark,
+  text--on-saturated:                 $rhelements--color--text--on-saturated,
+
+
+  // ========================================================================
+  // Base UI Link Colors
+  // ========================================================================
+
+  ui-link:                            $rhelements--color--ui-link,
+  ui-link--visited:                   $rhelements--color--ui-link--visited,
+  ui-link--hover:                     $rhelements--color--ui-link--hover,
+  ui-link--focus:                     $rhelements--color--ui-link--focus,
+
+  ui-link--on-dark:                   $rhelements--color--ui-link--on-dark,
+  ui-link--on-dark--visited:          $rhelements--color--ui-link--on-dark--visited,
+  ui-link--on-dark--hover:            $rhelements--color--ui-link--on-dark--hover,
+  ui-link--on-dark--focus:            $rhelements--color--ui-link--on-dark--focus,
+
+  ui-link--on-saturated:              $rhelements--color--ui-link--on-saturated,
+  ui-link--on-saturated--visited:     $rhelements--color--ui-link--on-saturated--visited,
+  ui-link--on-saturated--hover:       $rhelements--color--ui-link--on-saturated--hover,
+  ui-link--on-saturated--focus:       $rhelements--color--ui-link--on-saturated--focus,
+
+
+  // ========================================================================
+  // Base UI Colors for Buttons, CTAs, and actionable UI elements
+  // ========================================================================
+
+  ui-base:                            $rhelements--color--ui-base,
+  ui-base--hover:                     $rhelements--color--ui-base--hover,
+  ui-base--text:                      $rhelements--color--ui-base--text,
+  ui-base--text--hover:               $rhelements--color--ui-base--text--hover,
+
+  ui-complement:                      $rhelements--color--ui-complement,
+  ui-complement--hover:               $rhelements--color--ui-complement--hover,
+  ui-complement--text:                $rhelements--color--ui-complement--text,
+  ui-complement--text--hover:         $rhelements--color--ui-complement--text--hover,
+
+  ui-accent:                          $rhelements--color--ui-accent,
+  ui-accent--hover:                   $rhelements--color--ui-accent--hover,
+  ui-accent--text:                    $rhelements--color--ui-accent--text,
+  ui-accent--text--hover:             $rhelements--color--ui-accent--text--hover,
+
+  ui-disabled:                        $rhelements--color--ui-disabled,
+  ui-disabled--hover:                 $rhelements--color--ui-disabled--hover,
+  ui-disabled--text:                  $rhelements--color--ui-disabled--text,
+  ui-disabled--text--hover:           $rhelements--color--ui-disabled--text--hover,
+
+
+  // ========================================================================
+  // Base Surface Colors for Container elements
+  // ========================================================================
+
+  // Lightest group
+  surface--lightest:                  $rhelements--color--surface--lightest,
+  surface--lightest--text:            $rhelements--color--surface--lightest--text,
+  surface--lightest--link:            $rhelements--color--surface--lightest--link,
+  surface--lightest--link--visited:   $rhelements--color--surface--lightest--link--visited,
+  surface--lightest--link--hover:     $rhelements--color--surface--lightest--link--hover,
+  surface--lightest--link--focus:     $rhelements--color--surface--lightest--link--focus,
+
+  // Lighter group
+  surface--lighter:                   $rhelements--color--surface--lighter,
+  surface--lighter--text:             $rhelements--color--surface--lighter--text,
+  surface--lighter--link:             $rhelements--color--surface--lighter--link,
+  surface--lighter--link--visited:    $rhelements--color--surface--lighter--link--visited,
+  surface--lighter--link--hover:      $rhelements--color--surface--lighter--link--hover,
+  surface--lighter--link--focus:      $rhelements--color--surface--lighter--link--focus,
+
+  // Base group
+  surface--base:                      $rhelements--color--surface--base,
+  surface--base--text:                $rhelements--color--surface--base--text,
+  surface--base--link:                $rhelements--color--surface--base--link,
+  surface--base--link--visited:       $rhelements--color--surface--base--link--visited,
+  surface--base--link--hover:         $rhelements--color--surface--base--link--hover,
+  surface--base--link--focus:         $rhelements--color--surface--base--link--focus,
+
+  // Darker group
+  surface--darker:                    $rhelements--color--surface--darker,
+  surface--darker--text:              $rhelements--color--surface--darker--text,
+  surface--darker--link:              $rhelements--color--surface--darker--link,
+  surface--darker--link--visited:     $rhelements--color--surface--darker--link--visited,
+  surface--darker--link--hover:       $rhelements--color--surface--darker--link--hover,
+  surface--darker--link--focus:       $rhelements--color--surface--darker--link--focus,
+
+  // Darkest group
+  surface--darkest:                   $rhelements--color--surface--darkest,
+  surface--darkest--text:             $rhelements--color--surface--darkest--text,
+  surface--darkest--link:             $rhelements--color--surface--darkest--link,
+  surface--darkest--link--visited:    $rhelements--color--surface--darkest--link--visited,
+  surface--darkest--link--hover:      $rhelements--color--surface--darkest--link--hover,
+  surface--darkest--link--focus:      $rhelements--color--surface--darkest--link--focus,
+
+  // Complement group
+  surface--complement:                $rhelements--color--surface--complement,
+  surface--complement--text:          $rhelements--color--surface--complement--text,
+  surface--complement--link:          $rhelements--color--surface--complement--link,
+  surface--complement--link--visited: $rhelements--color--surface--complement--link--visited,
+  surface--complement--link--hover:   $rhelements--color--surface--complement--link--hover,
+  surface--complement--link--focus:   $rhelements--color--surface--complement--link--focus,
+
+
+  // Accent group
+  surface--accent:                    $rhelements--color--surface--accent,
+  surface--accent--text:              $rhelements--color--surface--accent--text,
+  surface--accent--link:              $rhelements--color--surface--accent--link,
+  surface--accent--link--visited:     $rhelements--color--surface--accent--link--visited,
+  surface--accent--link--hover:       $rhelements--color--surface--accent--link--hover,
+  surface--accent--link--focus:       $rhelements--color--surface--accent--link--focus,
+
+  // Border colors
+  surface--border:                    $rhelements--color--surface--border,
+  surface--border--lightest:          $rhelements--color--surface--border--lightest,
+  surface--border--darkest:           $rhelements--color--surface--border--darkest,
+
+
+  // ========================================================================
+  // Base Feedback Colors for messaging, errors, etc.
+  // ========================================================================
+
+  feedback--critical:                 $rhelements--color--feedback--critical,
+  feedback--critical--lightest:       $rhelements--color--feedback--critical--lightest,
+  feedback--critical--darkest:        $rhelements--color--feedback--critical--darkest,
+
+  feedback--important:                $rhelements--color--feedback--important,
+  feedback--important--lightest:      $rhelements--color--feedback--important--lightest,
+  feedback--important--darkest:       $rhelements--color--feedback--important--darkest,
+
+  feedback--moderate:                 $rhelements--color--feedback--moderate,
+  feedback--moderate--lightest:       $rhelements--color--feedback--moderate--lightest,
+  feedback--moderate--darkest:        $rhelements--color--feedback--moderate--darkest,
+
+  feedback--success:                  $rhelements--color--feedback--success,
+  feedback--success--lightest:        $rhelements--color--feedback--success--lightest,
+  feedback--success--darkest:         $rhelements--color--feedback--success--darkest,
+
+  feedback--info:                     $rhelements--color--feedback--info,
+  feedback--info--lightest:           $rhelements--color--feedback--info--lightest,
+  feedback--info--darkest:            $rhelements--color--feedback--info--darkest,
+
+  feedback--default:                  $rhelements--color--feedback--default,
+  feedback--default--lightest:        $rhelements--color--feedback--default--lightest,
+  feedback--default--darkest:         $rhelements--color--feedback--default--darkest,
+
+);

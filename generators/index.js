@@ -37,7 +37,7 @@ module.exports = class extends Generator {
       let name = answers.name.split("-")[1];
 
       const { version: rhelementVersion } = require(this.destinationPath(
-        "rhelement/package.json"
+        "../elements/rhelement/package.json"
       ));
 
       this.props = {
@@ -120,7 +120,7 @@ module.exports = class extends Generator {
 
     if (this.props.useSass) {
       this.fs.copyTpl(
-        this.templatePath("src/themeName.scss"),
+        this.templatePath("src/theme.scss"),
         this.destinationPath(
           `${this.props.themeName}/src/${this.props.themeName}.scss`
         ),
@@ -128,13 +128,13 @@ module.exports = class extends Generator {
       );
 
       this.fs.copy(
-        this.templatePath("src/sass/*"),
+        this.templatePath("src/sass/**/*"),
         this.destinationPath(`${this.props.themeName}/src/sass/`)
       );
 
     } else {
       this.fs.copy(
-        this.templatePath("src/themeName.css"),
+        this.templatePath("src/theme.css"),
         this.destinationPath(
           `${this.props.themeName}/src/${this.props.themeName}.css`
         )
